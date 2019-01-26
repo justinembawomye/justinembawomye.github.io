@@ -1,18 +1,18 @@
 ---
 layout: page
 title: About Me
-description: Joannah Nanjekye
+description: Justine Mbawomye
 permalink: /about/
 ---
 <br>
 
-<!-- <img src="{{ site.baseurl }}/index.jpg" title="Profile Picture" class="profile"> -->
+# About Me
 
-I am a christian software engineer , Proud Aviator, Aeronautical engineering student and self certified cessna captain. Call me captain at your own risk.
+I am trainer at Kampabits, passionate about programming and changing the world, inspiring ladies and those with disabilities to join the tech revolution.
 
-I am an open source ethusiast since my time as Rails girls summer of code student working on qutebrowser, a keyboard based browser based on pyqt5. And currently doing outreachy with Ceph.
+When am free i do baking & make research
 
-God, Code and Aircrafts we can talk about these like forever. In that order save the last two keep competiting for priority. 
+I see myself starting up a foundation to help kids, teens and ladies acquire technical skills.
 
 
-Remember opinions = my own
+#### This is me(TIM)
