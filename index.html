@@ -30,13 +30,17 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
 
-    <!-- =======================================================
-  * Template Name: DevFolio
-  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  * Updated: Mar 17 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+ <!-- Email js -->
+
+ <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+ <script type="text/javascript">
+   (function(){
+      emailjs.init("OE9_0QIpkAmGK8s4q");
+   })();
+ </script>
+ 
+
+ <!-- End of email js -->
   </head>
 
   <body>
@@ -601,8 +605,8 @@
                         <h5 class="title-left">Send Message Us</h5>
                       </div>
                       <div>
-                        <form
-                          action="forms/contact.php"
+                        <form id="contact-form"
+                          action=""
                           method="post"
                           role="form"
                           class="php-email-form"
@@ -753,12 +757,7 @@
                 Reserved
               </p>
               <div class="credits">
-                <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
-            -->
+              
                 Designed by
                 <a href="#hero">Justine</a>
               </div>
@@ -786,5 +785,33 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+
+    <script type="text/javascript">
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+    
+        // Collect form data
+        const serviceID = 'service_fc1ntxk';
+        const templateID = 'template_td205zi';
+        const templateParams = {
+          name: this.name.value,
+          email: this.email.value,
+          subject: this.subject.value,
+          message: this.message.value
+        };
+    
+        // Send the email using EmailJS
+        emailjs.send(serviceID, templateID, templateParams)
+          .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            document.querySelector('.sent-message').style.display = 'block';
+          }, function(error) {
+            console.log('FAILED...', error);
+            document.querySelector('.error-message').style.display = 'block';
+          });
+      });
+    </script>
+    
   </body>
 </html>
