@@ -1470,3 +1470,21 @@ footer .credits {
 footer .credits a {
   color: #fff;
 }
+
+.hire-button {
+  background-color: #007BFF;
+  color: white !important;
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.hire-button:hover {
+  background-color: #0056b3;
+}
