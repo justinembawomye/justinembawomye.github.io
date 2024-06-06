@@ -899,6 +899,7 @@ a:hover {
 .service-box .ico-circle i {
   line-height: 0;
   font-size: 40px;
+  align-items: center;
 }
 
 .service-box .s-title {
