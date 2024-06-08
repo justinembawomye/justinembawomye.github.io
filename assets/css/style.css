@@ -1488,3 +1488,10 @@ footer .credits a {
 .hire-button:hover {
   background-color: #0056b3;
 }
+
+/* Hide the button on screens 768px or smaller */
+@media (max-width: 768px) {
+  .nav-button {
+      display: none;
+  }
+}
