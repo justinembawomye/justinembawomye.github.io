@@ -1471,27 +1471,105 @@ footer .credits a {
   color: #fff;
 }
 
-.hire-button {
-  background-color: #007BFF;
-  color: white !important;
-  border: none;
-  padding: 15px 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
 
-.hire-button:hover {
-  background-color: #0056b3;
-}
 
 /* Hide the button on screens 768px or smaller */
 @media (max-width: 768px) {
   .nav-button {
       display: none;
+  }
+}
+
+/*font family and size for description*/
+.s-description{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+  Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+  Open Sans, Helvetica Neue, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* Languages & Technologies icon */
+
+.tech-icons img {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.tech-icons img:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.tech-icons {
+  margin-top: 30px;
+}
+
+/* General button reset */
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  font-family: inherit;
+}
+
+/* Shared button styles */
+.hire-button,
+.Download-cv-button {
+  display: inline-block;
+  margin: 0.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Anchor inside buttons */
+.hire-button a,
+.Download-cv-button a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Hire Me button color scheme */
+.hire-button a {
+  background: linear-gradient(90deg, #007bff, #0056b3);
+}
+
+.hire-button:hover a {
+  background: linear-gradient(90deg, #0056b3, #003f7f);
+  transform: translateY(-2px);
+}
+
+/* Download CV button color scheme */
+.Download-cv-button a {
+  background: linear-gradient(90deg, #ff7a18, #ff4e50);
+}
+
+.Download-cv-button:hover a {
+  background: linear-gradient(90deg, #ff4e50, #ff1a1a);
+  transform: translateY(-2px);
+}
+
+/* Active/pressed state */
+.hire-button:active a,
+.Download-cv-button:active a {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive: slightly larger on mobile */
+@media (max-width: 600px) {
+  .hire-button a,
+  .Download-cv-button a {
+    padding: 0.9rem 1.75rem;
+    font-size: 1rem;
   }
 }

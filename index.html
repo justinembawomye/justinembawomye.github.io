@@ -30,17 +30,19 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
 
- <!-- Email js -->
+    <!-- Email js -->
 
- <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
- <script type="text/javascript">
-   (function(){
-      emailjs.init("OE9_0QIpkAmGK8s4q");
-   })();
- </script>
- 
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("OE9_0QIpkAmGK8s4q");
+      })();
+    </script>
 
- <!-- End of email js -->
+    <!-- End of email js -->
   </head>
 
   <body>
@@ -59,10 +61,11 @@
             <li><a class="nav-link scrollto" href="#work">Work</a></li>
             <!-- <li><a class="nav-link scrollto" href="#blog">Blog</a></li> -->
             <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-            
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
-          <button class="hire-button nav-button" style="margin-left: 20px;"><a href="#contact">Hire Me</a></button>
+          <button class="hire-button nav-button" style="margin-left: 20px">
+            <a href="#contact">Hire Me</a>
+          </button>
         </nav>
         <!-- .navbar -->
       </div>
@@ -87,7 +90,18 @@
                 data-typed-items="Software Developer, Educator, Freelancer"
               ></span>
             </p>
-            <button class="hire-button" ><a href="#contact" style=" color: white">Hire Me</a></button>
+            <button class="hire-button">
+              <a href="#contact" style="color: white">Hire Me</a>
+            </button>
+            <button class="Download-cv-button">
+              <a
+                href="assets/files/Justine_Mbawomye_CV.pdf"
+                download="Justine_Mbawomye_CV.pdf"
+                style="color: white"
+              >
+                Download CV
+              </a>
+            </button>
             <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Hire Me</a></p> -->
           </div>
         </div>
@@ -141,7 +155,8 @@
                     </div>
                     <div class="skill-mf">
                       <p class="title-s">Knowledge & Skills</p>
-                      <span>HTML</span> <span class="pull-right">85%</span>
+                      <span>HTML & CSS</span>
+                      <span class="pull-right">85%</span>
                       <div class="progress">
                         <div
                           class="progress-bar"
@@ -152,7 +167,8 @@
                           aria-valuemax="100"
                         ></div>
                       </div>
-                      <span>CSS3</span> <span class="pull-right">75%</span>
+                      <span>React & Vite JS</span>
+                      <span class="pull-right">75%</span>
                       <div class="progress">
                         <div
                           class="progress-bar"
@@ -163,7 +179,8 @@
                           aria-valuemax="100"
                         ></div>
                       </div>
-                      <span>Python</span> <span class="pull-right">70%</span>
+                      <span>Python & Django</span>
+                      <span class="pull-right">50%</span>
                       <div class="progress">
                         <div
                           class="progress-bar"
@@ -174,18 +191,7 @@
                           aria-valuemax="100"
                         ></div>
                       </div>
-                      <span>JAVASCRIPT</span>
-                      <span class="pull-right">50%</span>
-                      <div class="progress">
-                        <div
-                          class="progress-bar"
-                          role="progressbar"
-                          style="width: 50%"
-                          aria-valuenow="90"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
-                      </div>
+
                       <span>Scratch</span> <span class="pull-right">90%</span>
                       <div class="progress">
                         <div
@@ -205,21 +211,22 @@
                         <h5 class="title-left">About me</h5>
                       </div>
                       <p class="lead">
-                        😄 My name is Justine Mbawomye, a Software Developer
-                        based in Kampala, Uganda. 🌱 I am an educator, learning
-                        facilitator & program technical coach at Kampabits
-                        Coding & Design School. I have experience in Python ,
-                        JavaScript & scratch programming languages. I also have
-                        experience in website development using html, CSS, JS &
-                        wordpress.
+                        😄 My name is Justine Mbawomye, a passionate Software
+                        Developer based in Kampala, Uganda. 🌱 I specialize in
+                        building efficient, user-friendly digital products using
+                        ReactJS, Python & Django and Scratch. I also have strong
+                        experience in modern web development with HTML, CSS,
+                        JavaScript, and WordPress.
                       </p>
                       <p class="lead">
-                        💙 I am keen on Learning. Currently learning App
-                        development with React native & Expo. Follow me on my
-                        social media handles as I document my learning journey.
-                        📚 Apart from computer languages, I also learn human
-                        languages like Kiswahili
+                        💙 I am deeply committed to continuous learning and
+                        growth. Currently, I’m expanding my skills in mobile app
+                        development using React Native and Expo. Follow me on my
+                        social media platforms as I document my developer
+                        journey and share my progress. 📚 Beyond programming, I
+                        also enjoy learning human languages such as Kiswahili.
                       </p>
+
                       <p class="lead">⚡ I am a lifelong learner!</p>
                     </div>
                   </div>
@@ -230,6 +237,82 @@
         </div>
       </section>
       <!-- End About Section -->
+
+      <!-- ======= Languages & Technologies Section ======= -->
+      <section id="services" class="services-mf pt-5 route">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="title-box text-center">
+                <h3 class="title-a">Languages & Technologies</h3>
+                <p class="subtitle-a">Tools and technologies I work with</p>
+                <div class="line-mf"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center tech-icons">
+            <div class="col-4 col-md-2 mb-4">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                alt="Python"
+                class="img-fluid"
+                title="Python"
+              />
+            </div>
+            <div class="col-4 col-md-2 mb-4">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+                alt="Django"
+                class="img-fluid"
+                title="Django"
+              />
+            </div>
+            <div class="col-4 col-md-2 mb-4">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                alt="React"
+                class="img-fluid"
+                title="React"
+              />
+            </div>
+            <div class="col-4 col-md-2 mb-4">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                alt="HTML5"
+                class="img-fluid"
+                title="HTML5"
+              />
+            </div>
+            <div class="col-4 col-md-2 mb-4">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                alt="CSS3"
+                class="img-fluid"
+                title="CSS3"
+              />
+            </div>
+
+            <div class="col-4 col-md-2 mb-4">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript"
+                class="img-fluid"
+                title="JavaScript"
+              />
+            </div>
+            <div class="col-4 col-md-2 mb-4">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                alt="Git"
+                class="img-fluid"
+                title="Git"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Languages Section -->
 
       <!-- ======= Services Section ======= -->
       <section id="services" class="services-mf pt-5 route">
@@ -329,7 +412,14 @@
                 </div>
                 <div class="service-content">
                   <h2 class="s-title">Game Development</h2>
-                  <p class="s-description text-center">
+                  <p
+                    class="s-description text-center"
+                    style="
+                      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+                        'Open Sans', 'Helvetica Neue', sans-serif;
+                    "
+                  >
                     I've experience in creating interactive stories, games and
                     anmations using scratch. I also teach programming, design
                     thinking and problem solving using scratch.
@@ -360,7 +450,6 @@
         </div>
       </section>
       <!-- End Services Section -->
-
 
       <!-- ======= Portfolio Section ======= -->
       <section id="work" class="portfolio-mf sect-pt4 route">
@@ -399,9 +488,7 @@
                     </div>
                     <div class="col-sm-4">
                       <div class="w-like">
-                        <a href="#">
-                          <span class="bi bi-plus-circle"></span
-                        ></a>
+                        <a href="#"> <span class="bi bi-plus-circle"></span></a>
                       </div>
                     </div>
                   </div>
@@ -436,9 +523,7 @@
                     </div>
                     <div class="col-sm-4">
                       <div class="w-like">
-                        <a href="#">
-                          <span class="bi bi-plus-circle"></span
-                        ></a>
+                        <a href="#"> <span class="bi bi-plus-circle"></span></a>
                       </div>
                     </div>
                   </div>
@@ -471,9 +556,7 @@
                     </div>
                     <div class="col-sm-4">
                       <div class="w-like">
-                        <a href="#">
-                          <span class="bi bi-plus-circle"></span
-                        ></a>
+                        <a href="#"> <span class="bi bi-plus-circle"></span></a>
                       </div>
                     </div>
                   </div>
@@ -506,9 +589,7 @@
                     </div>
                     <div class="col-sm-4">
                       <div class="w-like">
-                        <a href="#">
-                          <span class="bi bi-plus-circle"></span
-                        ></a>
+                        <a href="#"> <span class="bi bi-plus-circle"></span></a>
                       </div>
                     </div>
                   </div>
@@ -541,9 +622,7 @@
                     </div>
                     <div class="col-sm-4">
                       <div class="w-like">
-                        <a href="#">
-                          <span class="bi bi-plus-circle"></span
-                        ></a>
+                        <a href="#"> <span class="bi bi-plus-circle"></span></a>
                       </div>
                     </div>
                   </div>
@@ -576,9 +655,7 @@
                     </div>
                     <div class="col-sm-4">
                       <div class="w-like">
-                        <a href="#">
-                          <span class="bi bi-plus-circle"></span
-                        ></a>
+                        <a href="#"> <span class="bi bi-plus-circle"></span></a>
                       </div>
                     </div>
                   </div>
@@ -588,7 +665,7 @@
           </div>
         </div>
       </section>
-      <!-- End of portfolio--> 
+      <!-- End of portfolio-->
 
       <!-- contact section -->
       <section
@@ -605,10 +682,11 @@
                   <div class="row">
                     <div class="col-md-6">
                       <div class="title-box-2">
-                        <h5 class="title-left">Send a Message </h5>
+                        <h5 class="title-left">Send a Message</h5>
                       </div>
                       <div>
-                        <form id="contact-form"
+                        <form
+                          id="contact-form"
                           action=""
                           method="post"
                           role="form"
@@ -708,13 +786,17 @@
                       <div class="socials">
                         <ul>
                           <li>
-                            <a href="https://www.facebook.com/justine.tinah.712" target="_blank"
+                            <a
+                              href="https://www.facebook.com/justine.tinah.712"
+                              target="_blank"
                               ><span class="ico-circle"
                                 ><i class="bi bi-facebook"></i></span
                             ></a>
                           </li>
                           <li>
-                            <a href="https://www.instagram.com/justine_tinah/" target="_blank"
+                            <a
+                              href="https://www.instagram.com/justine_tinah/"
+                              target="_blank"
                               ><span class="ico-circle"
                                 ><i class="bi bi-instagram"></i></span
                             ></a>
@@ -756,14 +838,9 @@
           <div class="col-sm-12">
             <div class="copyright-box">
               <p class="copyright">
-                &copy; Copyright <strong>Justine Mbawomye</strong>. All Rights
-                Reserved
+                &copy;2025 Copyright <strong>Justine Mbawomye</strong>. All
+                Rights Reserved
               </p>
-              <div class="credits">
-              
-                Designed by
-                <a href="#hero">Justine</a>
-              </div>
             </div>
           </div>
         </div>
@@ -789,32 +866,34 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
-
     <script type="text/javascript">
-      document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-    
-        // Collect form data
-        const serviceID = 'service_fc1ntxk';
-        const templateID = 'template_td205zi';
-        const templateParams = {
-          name: this.name.value,
-          email: this.email.value,
-          subject: this.subject.value,
-          message: this.message.value
-        };
-    
-        // Send the email using EmailJS
-        emailjs.send(serviceID, templateID, templateParams)
-          .then(function(response) {
-            console.log('SUCCESS!', response.status, response.text);
-            document.querySelector('.sent-message').style.display = 'block';
-          }, function(error) {
-            console.log('FAILED...', error);
-            document.querySelector('.error-message').style.display = 'block';
-          });
-      });
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          // Collect form data
+          const serviceID = "service_fc1ntxk";
+          const templateID = "template_td205zi";
+          const templateParams = {
+            name: this.name.value,
+            email: this.email.value,
+            subject: this.subject.value,
+            message: this.message.value,
+          };
+
+          // Send the email using EmailJS
+          emailjs.send(serviceID, templateID, templateParams).then(
+            function (response) {
+              console.log("SUCCESS!", response.status, response.text);
+              document.querySelector(".sent-message").style.display = "block";
+            },
+            function (error) {
+              console.log("FAILED...", error);
+              document.querySelector(".error-message").style.display = "block";
+            }
+          );
+        });
     </script>
-    
   </body>
 </html>
