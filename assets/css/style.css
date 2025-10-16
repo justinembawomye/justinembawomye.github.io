@@ -1476,7 +1476,14 @@ footer .credits a {
 /* Hide the button on screens 768px or smaller */
 @media (max-width: 768px) {
   .nav-button {
-      display: none;
+      display: none !important;
+  }
+}
+
+/* Hide Hire Me button on small screens */
+@media (max-width: 991px) {
+  .hire-button {
+    display: none !important;
   }
 }
 
