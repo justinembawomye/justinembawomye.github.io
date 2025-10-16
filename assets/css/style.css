@@ -1480,12 +1480,7 @@ footer .credits a {
   }
 }
 
-/* Hide Hire Me button on small screens */
-/* @media (max-width: 991px) {
-  .hire-button {
-    display: none !important;
-  }
-} */
+
 
 /*font family and size for description*/
 .s-description{
